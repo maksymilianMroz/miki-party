@@ -89,11 +89,14 @@ const Info = styled.p`
   font-weight: 700;
   font-family: monospace;
   text-shadow: 4px 1px 39px #ffffff;
+  z-index: 15;
 
   @media (max-width: 768px) {
     font-size: 1.2em;
     margin: 50px 0;
     text-shadow: 2px 1px 20px #ffffff;
+    z-index: 20;
+    position: relative;
   }
 `;
 

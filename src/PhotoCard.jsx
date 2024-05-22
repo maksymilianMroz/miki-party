@@ -7,28 +7,28 @@ const sizes = {
     width: 150px;
 
     @media (max-width: 768px) {
-      width: 100px;
+      width: 80px;
     }
   `,
   large: css`
     width: 200px;
 
     @media (max-width: 768px) {
-      width: 150px;
+      width: 100px;
     }
   `,
   huge: css`
     width: 300px;
 
     @media (max-width: 768px) {
-      width: 200px;
+      width: 150px;
     }
   `,
   enormous: css`
     width: 450px;
 
     @media (max-width: 768px) {
-      width: 250px;
+      width: 200px;
     }
   `,
 };
@@ -59,7 +59,6 @@ const Card = styled.div`
 
   @media (max-width: 768px) {
     border: ${({ noFrame }) => (noFrame ? "none" : "5px solid white")};
-    width: auto;
   }
 `;
 
