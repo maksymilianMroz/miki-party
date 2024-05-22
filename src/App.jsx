@@ -60,7 +60,7 @@ const Header = styled.h1`
   text-shadow: 4px 1px 39px #ffffff;
 
   @media (max-width: 768px) {
-    font-size: 2.5em;
+    font-size: 3.5em; /* Increase font size */
     line-height: 1.2;
     letter-spacing: -2px;
     text-shadow: 2px 1px 20px #ffffff;
@@ -76,7 +76,7 @@ const Par = styled.p`
   font-weight: 700;
 
   @media (max-width: 768px) {
-    font-size: 1.2em;
+    font-size: 2em; /* Increase font size */
     line-height: 1.2;
     letter-spacing: -1px;
     text-shadow: 2px 1px 20px #ffffff;
@@ -92,9 +92,9 @@ const Info = styled.p`
   z-index: 15;
 
   @media (max-width: 768px) {
-    font-size: 1.2em;
+    font-size: 2em; /* Increase font size */
     margin: 50px 0;
-    text-shadow: 2px 1px 20px #ffffff;
+    text-shadow: none;
     z-index: 20;
     position: relative;
   }

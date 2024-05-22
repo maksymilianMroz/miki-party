@@ -73,7 +73,7 @@ const Title = styled.h3`
   margin: 5px 0;
 
   @media (max-width: 768px) {
-    font-size: 0.8em;
+    font-size: 1.2em; /* Increase font size */
   }
 `;
 
@@ -82,7 +82,7 @@ const Description = styled.p`
   margin: 5px 0;
 
   @media (max-width: 768px) {
-    font-size: 0.6em;
+    font-size: 1em; /* Increase font size */
   }
 `;
 
