@@ -11,7 +11,13 @@ const StyledSpan = styled.span`
   line-height: 0.9;
   transform: rotate(355deg);
   text-shadow: none;
-  /* border: 12px solid #cdfae3; */
+
+  @media (max-width: 768px) {
+    padding: 0 10px 12px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
 `;
 
 const StyledText = ({ children }) => {

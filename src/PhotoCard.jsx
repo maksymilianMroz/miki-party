@@ -5,15 +5,31 @@ import PropTypes from "prop-types";
 const sizes = {
   normal: css`
     width: 150px;
+
+    @media (max-width: 768px) {
+      width: 100px;
+    }
   `,
   large: css`
     width: 200px;
+
+    @media (max-width: 768px) {
+      width: 150px;
+    }
   `,
   huge: css`
     width: 300px;
+
+    @media (max-width: 768px) {
+      width: 200px;
+    }
   `,
   enormous: css`
     width: 450px;
+
+    @media (max-width: 768px) {
+      width: 250px;
+    }
   `,
 };
 
@@ -40,6 +56,11 @@ const Card = styled.div`
   filter: ${({ isBlurred, extraBlur }) =>
     `blur(${isBlurred ? 5 : extraBlur}px)`};
   transition: filter 1s ease-out;
+
+  @media (max-width: 768px) {
+    border: ${({ noFrame }) => (noFrame ? "none" : "5px solid white")};
+    width: auto;
+  }
 `;
 
 const Photo = styled.img`
@@ -51,11 +72,19 @@ const Photo = styled.img`
 const Title = styled.h3`
   font-size: 1em;
   margin: 5px 0;
+
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+  }
 `;
 
 const Description = styled.p`
   font-size: 0.8em;
   margin: 5px 0;
+
+  @media (max-width: 768px) {
+    font-size: 0.6em;
+  }
 `;
 
 const PhotoCard = ({ photo, style }) => {

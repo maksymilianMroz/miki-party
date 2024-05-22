@@ -9,7 +9,6 @@ import bacziMain from "./assets/mainBaczi/baczi7.jpg";
 
 import { photos } from "./data/photos";
 
-// Przykładowe dane zdjęć z pozycjonowaniem, rozmiarami, rotacją, rozmyciem i z-indexem
 const mainPhoto = {
   url: bacziMain,
   title: "Witajcie w moim żyćku <3",
@@ -31,6 +30,11 @@ const BackgroundContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    height: auto;
+    flex-direction: column;
+  }
 `;
 
 const Content = styled.div`
@@ -40,6 +44,11 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 const Header = styled.h1`
@@ -49,6 +58,13 @@ const Header = styled.h1`
   line-height: 0.9;
   letter-spacing: -6px;
   text-shadow: 4px 1px 39px #ffffff;
+
+  @media (max-width: 768px) {
+    font-size: 2.5em;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    text-shadow: 2px 1px 20px #ffffff;
+  }
 `;
 
 const Par = styled.p`
@@ -58,6 +74,13 @@ const Par = styled.p`
   text-shadow: 4px 1px 39px #ffffff;
   font-family: monospace;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    text-shadow: 2px 1px 20px #ffffff;
+  }
 `;
 
 const Info = styled.p`
@@ -66,6 +89,12 @@ const Info = styled.p`
   font-weight: 700;
   font-family: monospace;
   text-shadow: 4px 1px 39px #ffffff;
+
+  @media (max-width: 768px) {
+    font-size: 1.2em;
+    margin: 50px 0;
+    text-shadow: 2px 1px 20px #ffffff;
+  }
 `;
 
 function App() {
@@ -81,7 +110,7 @@ function App() {
         </Content>
       </BackgroundContainer>
 
-      <Info>
+      <Info className="info">
         Więc byłoby miło gościć <strong>Cię</strong> na tej imprezie!
         <br />
         <br />

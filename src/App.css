@@ -35,6 +35,40 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
+  #root {
+    width: 100%;
+    padding: 10px;
+  }
+
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+    line-height: 1.2;
+    letter-spacing: -2px;
+  }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.2;
+  }
+
+  .info {
+    font-size: 1.2em;
+    margin: 50px 0;
+  }
 }

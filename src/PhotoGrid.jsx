@@ -9,6 +9,13 @@ const Grid = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    position: relative;
+    top: unset;
+    left: unset;
+    height: auto;
+  }
 `;
 
 const PhotoGrid = ({ photos }) => (
